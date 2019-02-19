@@ -2,3 +2,5 @@ cv.log
 cv.aux
 cv.out
 cv.synctex(busy)
+
+cv\.synctex\.gz
