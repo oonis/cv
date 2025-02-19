@@ -1,8 +1,11 @@
 # [My CV](https://macalu.so/cv.pdf)
 
-My resume/CV, built using [awesomeCV](https://github.com/posquit0/Awesome-CV#readme).
+My resume/CV
 
-Compiling:
+## Development
+
+### Compiling
+
 ```
 xelatex cv.tex
 ```
