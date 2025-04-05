@@ -6,6 +6,6 @@ My resume/CV
 
 ### Compiling
 
-```
+```bash
 xelatex cv.tex
 ```
