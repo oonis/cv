@@ -787,10 +787,11 @@
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \recipienttitlestyle{\@recipientname} & \letterdatestyle{\@letterdate}
+    \ifempty{\@recipientname}{\recipienttitlestyle{[Recipient Name Missing]}}{\recipienttitlestyle{\@recipientname}} & 
+    \ifempty{\@letterdate}{\letterdatestyle{[Date Missing]}}{\letterdatestyle{\@letterdate}}
   \end{tabular*}
   \begin{singlespace}
-    \recipientaddressstyle{\@recipientaddress} \\\\
+    \ifempty{\@recipientaddress}{\recipientaddressstyle{[Address Missing]}}{\recipientaddressstyle{\@recipientaddress}} \\\\
   \end{singlespace}
   \ifthenelse{\isundefined{\@lettertitle}}
     {}
@@ -809,5 +810,11 @@
     {%
       \\\\\\
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
+    }
+  \ifthenelse{\isundefined{\@signature}}
+    {}
+    {%
+      \vspace{5mm}
+      \includegraphics[width=3cm]{\@signature} \\
     }
 }

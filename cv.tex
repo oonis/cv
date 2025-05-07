@@ -1,64 +1,78 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-% Configuration
-% A4 paper size by default, use 'letterpaper' for US letter
+%-------------------------------------------------------------------------------
+% CONFIGURATION
+%-------------------------------------------------------------------------------
+
+% Document class
 \documentclass[11pt, a4paper]{awesome-cv}
 
-% Configure page margins with geometry
+% Page margins
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% Specify the location of the included fonts
+% Fonts directory
 \fontdir[fonts/]
 
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% Highlight color
 \colorlet{awesome}{awesome-darknight}
 
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{E14F4B}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-
-% Set false if you don't want to highlight section with awesome color
+% Section color highlighting
 \setbool{acvSectionColorHighlight}{true}
 
-% If you would like to change the social information separator from a pipe (|) to something else
+% Social information separator
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-% Personal Information
-\name{Sam}{Macaluso}
-\position{Software developer}
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
 
+\name{Sam}{Macaluso}
+\position{Software Developer}
 \email{sam@macalu.so}
 \homepage{macalu.so}
 \github{oonis}
+\linkedin{oonis}
 
+
+%-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
-% Give optional argument to change alignment(C: center, L: left, R: right)
+%-------------------------------------------------------------------------------
+% HEADER
+%-------------------------------------------------------------------------------
+
+% Print the header with personal information
+% Optional alignment: C (center), L (left), R (right)
 \makecvheader
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
+%-------------------------------------------------------------------------------
+% FOOTER
+%-------------------------------------------------------------------------------
+
+% Uncomment to print the footer with 3 arguments (<left>, <center>, <right>)
 % \makecvfooter
 %   {\today}
 %   {Samuel P. Macaluso~~~·~~~Curriculum Vitae}
 %   {\thepage}
 
-% CV Content
+%-------------------------------------------------------------------------------
+% CV CONTENT
+%-------------------------------------------------------------------------------
+
+% Summary Section (optional, uncomment if needed)
 % \input{cv/summary.tex}
+
+% Work Experience
 \input{cv/expereince.tex}
-\vspace{100mm}
+
+% Projects
 \input{cv/projects.tex}
+
+% Education
 \input{cv/education.tex}
+
+% Skills
 \input{cv/skills.tex}
 
 %-------------------------------------------------------------------------------
