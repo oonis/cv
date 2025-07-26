@@ -22,13 +22,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up TeX Live
-        uses: teatimeguest/setup-texlive-action@v3
-
       - name: Compile LaTeX document
-        run: |
-          xelatex -interaction=nonstopmode cv.tex
-          xelatex -interaction=nonstopmode cv.tex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
 
       - name: Archive compiled PDF
         uses: actions/upload-artifact@v4
