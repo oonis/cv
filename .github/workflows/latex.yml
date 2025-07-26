@@ -1,0 +1,37 @@
+name: Build LaTeX CV
+
+on:
+  push:
+    paths:
+      - '**.tex'
+      - '**.cls'
+      - '**.sty'
+      - '**/fonts/**'
+      - '.github/workflows/latex.yml'
+  pull_request:
+    paths:
+      - '**.tex'
+      - '**.cls'
+      - '**.sty'
+      - '**/fonts/**'
+      - '.github/workflows/latex.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up TeX Live
+        uses: teatimeguest/setup-texlive-action@v3
+
+      - name: Compile LaTeX document
+        run: |
+          xelatex -interaction=nonstopmode cv.tex
+          xelatex -interaction=nonstopmode cv.tex
+
+      - name: Archive compiled PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: cv.pdf
