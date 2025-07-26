@@ -22,10 +22,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Compile LaTeX document
+      - name: Compile LaTeX document (XeLaTeX)
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv.tex
+          latex_engine: xelatex
 
       - name: Archive compiled PDF
         uses: actions/upload-artifact@v4
