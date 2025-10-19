@@ -28,7 +28,7 @@ jobs:
           root_file: cv.tex
           latex_engine: xelatex
 
-      - name: Archive compiled PDF
+      - name: Archive PDF
         uses: actions/upload-artifact@v4
         with:
           name: cv-pdf
