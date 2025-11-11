@@ -3,3 +3,6 @@ cv.aux
 cv.out
 
 cv\.synctex\.gz
+
+# GitHub Pages build directory
+_site/
