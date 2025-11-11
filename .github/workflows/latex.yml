@@ -26,7 +26,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv.tex
-          latex_engine: xelatex
+          latexmk_use_xelatex: true
 
       - name: Archive compiled PDF
         uses: actions/upload-artifact@v4
