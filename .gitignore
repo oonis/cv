@@ -1,6 +1,8 @@
 cv.log
 cv.aux
 cv.out
+cv.pdf
+*.png
 
 cv\.synctex\.gz
 
