@@ -1,4 +1,4 @@
-# [My CV](https://macalu.so/cv.pdf)
+# [My CV](https://oonis.github.io/cv)
 
 ## Development
 
