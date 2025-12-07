@@ -675,7 +675,7 @@
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 5.5cm} R{4.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 6.5cm} R{5.5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
@@ -697,7 +697,7 @@
 \newcommand*{\cvsubentry}[4]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 5.5cm} R{4.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 6.5cm} R{5.5cm}}
     \setlength\leftskip{0.2cm}
     \subentrytitlestyle{#2} & \ifthenelse{\equal{#1}{}}
       {\subentrydatestyle{#3}}{}
@@ -786,7 +786,7 @@
   \vspace{8.4mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 5.5cm} R{4.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 6.5cm} R{5.5cm}}
     \ifempty{\@recipientname}{\recipienttitlestyle{[Recipient Name Missing]}}{\recipienttitlestyle{\@recipientname}} & 
     \ifempty{\@letterdate}{\letterdatestyle{[Date Missing]}}{\letterdatestyle{\@letterdate}}
   \end{tabular*}
