@@ -9,14 +9,14 @@ on:
       - '**.cls'
       - '**.sty'
       - '**/fonts/**'
-      - '.github/workflows/latex.yml'
+      - '**.yml'
   pull_request:
     paths:
       - '**.tex'
       - '**.cls'
       - '**.sty'
       - '**/fonts/**'
-      - '.github/workflows/latex.yml'
+      - '**.yml'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:

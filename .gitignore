@@ -7,8 +7,9 @@
 *.synctex.gz
 *.xdv
 
-# Generated images
+# Generated artifacts
 *.png
+cv.pdf
 
 # GitHub Pages build directory
 _site/
