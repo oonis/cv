@@ -706,7 +706,7 @@
       {\subentrypositionstyle{#1} & \subentrydatestyle{#3} \\}
     \ifthenelse{\equal{#4}{}}
       {}
-      {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
+      {\multicolumn{2}{L{\textwidth}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
 }
 
