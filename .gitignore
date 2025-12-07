@@ -1,10 +1,14 @@
-cv.log
-cv.aux
-cv.out
-cv.pdf
-*.png
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
 
-cv\.synctex\.gz
+# Generated images
+*.png
 
 # GitHub Pages build directory
 _site/
